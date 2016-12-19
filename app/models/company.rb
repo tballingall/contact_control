@@ -4,6 +4,9 @@ class Company
   field 'events', type: String
   field 'employee county', type: Integer
 
+  def company;
+  end
+
   def company_information
     #similar to user_information
     #Nane, address, contact, etc.
