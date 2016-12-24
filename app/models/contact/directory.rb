@@ -1,18 +1,18 @@
 ##
 # Service responsible for finding contact information
 
-def Contacts
+def Directory
   ##
-  # Returns a list of all companies and people in a user's rolodex
+  # Returns a list of all companies and people in a user's directory
   #
   # * user_id is the user context for which we should return information.
   # * params is a list of filters to apply (will acceptable values later)
   # * pagination is map of values for use in pagination
-  def contact_index(user_id, params, pagination)
+  def directory_index(user_id, params, pagination)
   end
 
   ##
-  # Returns a list of companies in a user's rolodex
+  # Returns a list of companies in a user's directory
   #
   # This method only returns general information about companies and as
   #   such does not require a user_id
@@ -42,8 +42,8 @@ def Contacts
   #
   # * id is the id of the company to return
   # * user_id is the user context for which we should return information.
-
-  def details(id, user_id)
+  # * pagination is map of values for use in pagination
+  def directory_locator(user_id, id, pagination);
   end
 
   ##
@@ -62,7 +62,7 @@ end
 
 def Registrar
   ##
-  # Command to add a person to the rolodex
+  # Command to add a person to the directory
   #
   # * user is the user context for which we should add information
   # * params is a value object from which to generate a new person entity
@@ -71,7 +71,7 @@ def Registrar
   end
 
   ##
-  # Command to add a person to the rolodex
+  # Command to add a person to the directory
   #
   # The user context will only be used for non-general company information
   #
